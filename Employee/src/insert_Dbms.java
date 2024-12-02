@@ -6,7 +6,7 @@ public class insert_Dbms {
 		
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","sys as sysdba","11Hola@migo11");
+			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","sys as sysdba","passwordorcldb");
 			
 			if(!conn.isClosed()) {
 				
