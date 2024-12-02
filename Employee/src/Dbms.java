@@ -5,7 +5,7 @@ public class Dbms {
 	{
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","sys as sysdba","11Hola@migo11");
+			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","sys as sysdba","");
 			if(!conn.isClosed())
 			{
 				System.out.println("Succesfully connected to Oracle server...");
